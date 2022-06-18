@@ -51,6 +51,7 @@ export const SearchBox = styled.input`
 
 export const NavItems = styled.div`
   position: relative;
+  cursor: pointer;
 `;
 
 export const Icons = styled.div`
