@@ -1,0 +1,53 @@
+[
+  {
+    "id": 1,
+    "username": "diagonal.official",
+    "profileURL": "https://source.unsplash.com/random/400x400",
+    "postURL": "https://source.unsplash.com/random/600x500",
+    "like": "1,992",
+    "comments": [
+      {
+        "username": "yunjink",
+        "comment": "Love this pic ! 😘"
+      },
+      {
+        "username": "yunjink",
+        "comment": "Heyyyy"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "username": "theilma_official",
+    "profileURL": "https://source.unsplash.com/random/400x400",
+    "postURL": "https://source.unsplash.com/random/900x500",
+    "like": "1,109",
+    "comments": [
+      {
+        "username": "yunjink",
+        "comment": "You're my favorite 💕"
+      },
+      {
+        "username": "yunjink",
+        "comment": "반가워요 ! 😎"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "username": "onnuk_",
+    "profileURL": "https://source.unsplash.com/random/400x400",
+    "postURL": "https://source.unsplash.com/random/700x1080",
+    "like": "1,004",
+    "comments": [
+      {
+        "username": "yunjink",
+        "comment": "오눅오눅"
+      },
+      {
+        "username": "yunjink",
+        "comment": "안녕하세요 ~ 😊"
+      }
+    ]
+  }
+]

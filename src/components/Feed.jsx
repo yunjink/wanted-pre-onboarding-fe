@@ -26,14 +26,44 @@ import { BsBookmark } from 'react-icons/bs';
 import { VscSmiley } from 'react-icons/vsc';
 
 const Feed = (
-  index,
-  userName,
+  id,
+  username,
   profileURL,
   postURL,
   like,
   comments,
   addComment
 ) => {
+  const [comment, setComment] = useState('');
+  const onCommentChange = (e) => {
+    const {
+      currentTarget: { value },
+    } = e;
+    setComment(value);
+  };
+
+  const inputComment = useRef();
+
+  const onSubmit = (e) => {
+    e.preventDefault();
+    if (!comment) return;
+    inputComment.current.value = '';
+    setComment('');
+    const username = 'yunjink';
+    addComment(id, userName, comment);
+  };
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = postURL;
+    image.onLoad = (e) => {
+      setLoading(false);
+    };
+  }, []);
+
+  const [isLoading, setIsLoading] = useState(true);
+  if (isLoading) return <></>;
+
   return (
     <>
       <Wrapper>

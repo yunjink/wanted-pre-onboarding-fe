@@ -41,28 +41,44 @@ export const UserName = styled.div`
   font-weight: 800;
   margin-top: -5px;
 `;
-export const PostBox = styled.div``;
-export const PostImgBox = styled.div``;
+export const PostBox = styled.div`
+  /* This is PostBox */
+`;
+
+export const PostImgBox = styled.div`
+  /* This is PostImgBox */
+`;
+
 export const PostImg = styled.div`
   width: 100%;
 `;
-export const PostContentBox = styled.div``;
+
+export const PostContentBox = styled.div`
+  /* This is PostContentBox */
+`;
+
 export const ReactionBox = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 8px;
 `;
+
 export const LikeCmtMsgIcon = styled.div`
   width: 110px;
   display: flex;
   justify-content: space-between;
 `;
-export const BookmarkIcon = styled.div``;
+
+export const BookmarkIcon = styled.div`
+  /* This is BookmarkIcon */
+`;
+
 export const LikeCount = styled.div`
   padding: 10px;
   font-size: 14px;
   font-weight: 800;
 `;
+
 export const CommentList = styled.div`
   padding: 10px;
   margin-bottom: 5px;
@@ -82,6 +98,7 @@ export const CommentInputBox = styled.form`
   padding: 8px;
   border-top: 1px solid #efefef;
 `;
+
 export const Input = styled.input`
   background-color: transparent;
   color: #262626;
@@ -89,6 +106,7 @@ export const Input = styled.input`
   flex: 1;
   padding: 12px;
 `;
+
 export const ButtonSubmit = styled.button`
   background-color: transparent;
   font-size: 15px;
