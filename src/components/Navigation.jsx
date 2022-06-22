@@ -8,7 +8,6 @@ import {
   Icons,
 } from '../styles/Navigation.styled';
 import { MdHomeFilled } from 'react-icons/md';
-import { FaRegPaperPlane } from 'react-icons/fa';
 import { FiHeart } from 'react-icons/fi';
 import { CgProfile } from 'react-icons/cg';
 
