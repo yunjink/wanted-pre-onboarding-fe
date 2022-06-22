@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const Navbar = styled.nav`
+export const Wrapper = styled.div`
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 60px;
   background: #fff;
   border-bottom: 1px solid #dfdfdf;
   display: flex;
@@ -13,8 +13,8 @@ export const Navbar = styled.nav`
   padding: 5px 0;
 `;
 
-export const NavWrapper = styled.div`
-  width: 70%;
+export const Nav = styled.nav`
+  width: 65%;
   max-width: 1000px;
   height: 100%;
   display: flex;
@@ -22,9 +22,10 @@ export const NavWrapper = styled.div`
   align-items: center;
 `;
 
-export const Img = styled.img.attrs({})`
-  height: 2.8rem;
+export const Logo = styled.img.attrs({})`
+  height: 2.5rem;
   margin-top: 5px;
+  position: relative;
 `;
 
 export const SearchBox = styled.input`
@@ -33,15 +34,16 @@ export const SearchBox = styled.input`
   transform: translateX(-50%); // 가운데 정렬
   width: 13rem;
   height: 2.3rem;
-  background: #efefef;
+  background-color: #efefef;
   border: none;
   border-radius: 5px;
-  color: #8e8e8e;
-  text-align: left;
+  color: #000;
   padding: 0 10px;
+  font-size: 16px;
 
   ::placeholder {
     color: #8e8e8e;
+    font-weight: lighter;
   }
 
   @media (max-width: 640px) {
@@ -49,14 +51,17 @@ export const SearchBox = styled.input`
   }
 `;
 
-export const NavItems = styled.div`
-  position: relative;
+export const IconsWrapper = styled.div`
+  width: 150px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 `;
 
 export const Icons = styled.div`
   height: 100%
-  cursor: pointer;
   margin: 0 10px;
   display: inline-block;
   font-size: 1.5rem;

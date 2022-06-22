@@ -1,14 +1,15 @@
 import React from 'react';
-import { Body } from '../styles/Main.styled';
+import { Wrapper } from '../styles/Main.styled';
+import Feed from '../components/Feed';
 import Navigation from '../components/Navigation';
 
 const Main = () => {
   return (
     <>
-      {/* <Body>
+      <Wrapper>
         <Navigation />
-      </Body> */}
-      <Navigation />
+        <Feed></Feed>
+      </Wrapper>
     </>
   );
 };

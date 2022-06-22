@@ -12,9 +12,9 @@ const GlobalStyles = createGlobalStyle`
  }
 
  body {
-    width: 100%;
+    /* width: 100%;
     background: #fafafa;
-    position: relative;
+    position: relative; */
  }
   
   button {
