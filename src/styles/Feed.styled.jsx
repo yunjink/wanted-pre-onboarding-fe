@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
+  width: 40%;
   max-width: 550px;
   min-width: 470px;
-  width: 40%;
-  margin-top: 20px;
-  border: 1px solid lightgray;
-  border-radius: 10px;
-  background-color: #fafafa;
   display: flex;
   flex-direction: column;
+  border: 1px solid lightgray;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin-top: 20px;
 
   @media (max-width: 499px) {
     min-width: 0px;
@@ -30,6 +30,7 @@ export const UserProfile = styled.img`
   width: 33px;
   height: 33px;
   border-radius: 17px;
+  background-color: #d3d3d3;
 `;
 export const UserName = styled.div`
   display: flex;
@@ -64,9 +65,10 @@ export const ReactionBox = styled.div`
 `;
 
 export const LikeCmtMsgIcon = styled.div`
-  width: 110px;
+  width: 95px;
   display: flex;
   justify-content: space-between;
+  /* padding: 0 30px; */
 `;
 
 export const BookmarkIcon = styled.div`
@@ -96,7 +98,7 @@ export const CommentInputBox = styled.form`
   justify-content: space-between;
   align-items: center;
   padding: 8px;
-  border-top: 1px solid #efefef;
+  border-top: 1.5px solid #efefef;
 `;
 
 export const Input = styled.input`
@@ -105,12 +107,13 @@ export const Input = styled.input`
   display: flex;
   flex: 1;
   padding: 12px;
+  border: none;
 `;
 
 export const ButtonSubmit = styled.button`
+  color: ${(props) => (props.isCommentOn ? '#0095f6' : '#bfdffd')};
+  cursor: ${(props) => (props.isCommentOn ? 'pointer' : 'auto')};
   background-color: transparent;
   font-size: 15px;
-  font-weight: 800;
-  color: ${(props) => (props.isReady ? '#0094f6' : '#c5e7fd')};
-  cursor: ${(props) => (props.isReady ? 'pointer' : 'auto')};
+  font-weight: bold;
 `;
