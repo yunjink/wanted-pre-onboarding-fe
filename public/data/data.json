@@ -2,8 +2,8 @@
   {
     "id": 1,
     "username": "diagonal.official",
-    "profileURL": "https://source.unsplash.com/random/400x400",
-    "postURL": "https://source.unsplash.com/random/600x500",
+    "profileURL": "../images/profile1.png",
+    "postURL": "../images/post1.jpg",
     "like": "1,992",
     "comments": [
       {
@@ -19,8 +19,8 @@
   {
     "id": 2,
     "username": "theilma_official",
-    "profileURL": "https://source.unsplash.com/random/400x400",
-    "postURL": "https://source.unsplash.com/random/900x500",
+    "profileURL": "../images/profile2.png",
+    "postURL": "../images/post2.jpeg",
     "like": "1,109",
     "comments": [
       {
@@ -36,8 +36,8 @@
   {
     "id": 3,
     "username": "onnuk_",
-    "profileURL": "https://source.unsplash.com/random/400x400",
-    "postURL": "https://source.unsplash.com/random/700x1080",
+    "profileURL": "../images/profile3.png",
+    "postURL": "../images/post3.png",
     "like": "1,004",
     "comments": [
       {
