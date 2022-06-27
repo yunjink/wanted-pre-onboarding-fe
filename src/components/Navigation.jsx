@@ -12,6 +12,14 @@ import { FiHeart } from 'react-icons/fi';
 import { CgProfile } from 'react-icons/cg';
 
 const Navigation = () => {
+  const handleLogOut = () => {
+    if (window.confirm('로그아웃 하시겠습니까?')) {
+      localStorage.removeItem('email');
+      localStorage.removeItem('password');
+      location.reload();
+    }
+  };
+
   return (
     <>
       <Wrapper>
@@ -26,7 +34,7 @@ const Navigation = () => {
               <FiHeart />
             </Icons>
             <Icons>
-              <CgProfile />
+              <CgProfile onClick={handleLogOut} />
             </Icons>
           </IconsWrapper>
         </Nav>
