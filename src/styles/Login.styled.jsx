@@ -33,7 +33,7 @@ export const Img = styled.img.attrs({})`
   width: 55%;
 `;
 
-export const LoginForm = styled.div`
+export const LoginForm = styled.form`
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -41,15 +41,16 @@ export const LoginForm = styled.div`
   align-items: center;
 `;
 
-export const Input = styled.input.attrs({})`
+export const Input = styled.input`
   width: 80%;
   height: 2.5rem;
   background-color: #fafafa;
-  border: 1px solid #dbdbdb;
+  border: 1px solid;
   border-radius: 3px;
+  border-color: ${(props) => (props.isValidated ? '#dbdbdb' : '#ff3b23')};
+  font-size: 12px;
   padding: 9px 0 7px 8px;
   margin: 3px 0;
-  font-size: 13px;
   color: #262626;
   text-decoration: none solid #929292;
 `;
@@ -63,5 +64,5 @@ export const Button = styled.button`
   border-radius: 3px;
   font-size: 15px;
   font-weight: bold;
-  // validation check 통과시 진한 파랑으로 변경 #0095f6
+  background-color: ${(props) => (props.isValidated ? '#0095f6' : '#bfdffd')};
 `;
