@@ -28,7 +28,7 @@ const Feed = () => {
       <UserBox>
         <UserProfile />
         <UserName></UserName>
-        <BsThreeDots />
+        <BsThreeDots size="20" />
       </UserBox>
       <PostBox>
         <PostImgBox>
@@ -37,12 +37,12 @@ const Feed = () => {
         <PostContentBox>
           <ReactionBox>
             <LikeCmtMsgIcon>
-              <FiHeart />
-              <FiMessageCircle />
-              <BiPaperPlane />
+              <FiHeart size="24" />
+              <FiMessageCircle size="25" />
+              <BiPaperPlane size="26" />
             </LikeCmtMsgIcon>
             <BookmarkIcon>
-              <FiBookmark />
+              <FiBookmark size="27" />
             </BookmarkIcon>
           </ReactionBox>
           <LikeCount>좋아요 100개</LikeCount>

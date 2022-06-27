@@ -32,6 +32,7 @@ export const UserProfile = styled.img`
   border-radius: 17px;
   background-color: #d3d3d3;
 `;
+
 export const UserName = styled.div`
   display: flex;
   flex: 1;
@@ -42,6 +43,7 @@ export const UserName = styled.div`
   font-weight: 800;
   margin-top: -5px;
 `;
+
 export const PostBox = styled.div`
   /* This is PostBox */
 `;
@@ -50,7 +52,7 @@ export const PostImgBox = styled.div`
   /* This is PostImgBox */
 `;
 
-export const PostImg = styled.div`
+export const PostImg = styled.img`
   width: 100%;
 `;
 
@@ -65,10 +67,9 @@ export const ReactionBox = styled.div`
 `;
 
 export const LikeCmtMsgIcon = styled.div`
-  width: 95px;
+  width: 6rem;
   display: flex;
   justify-content: space-between;
-  /* padding: 0 30px; */
 `;
 
 export const BookmarkIcon = styled.div`
@@ -77,8 +78,8 @@ export const BookmarkIcon = styled.div`
 
 export const LikeCount = styled.div`
   padding: 10px;
-  font-size: 14px;
-  font-weight: 800;
+  font-size: 14.5px;
+  font-weight: 600;
 `;
 
 export const CommentList = styled.div`
