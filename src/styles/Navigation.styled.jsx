@@ -24,15 +24,18 @@ export const Nav = styled.nav`
 
 export const Logo = styled.img.attrs({})`
   height: 2.5rem;
+  width: 110px;
   margin-top: 5px;
   position: relative;
 `;
 
 export const SearchBox = styled.input`
   position: absolute;
+  // 가운데 정렬 ------------
   left: 50%;
-  transform: translateX(-50%); // 가운데 정렬
-  width: 13rem;
+  transform: translateX(-50%);
+  // -------------------------
+  width: 17rem;
   height: 2.3rem;
   background-color: #efefef;
   border: none;
@@ -46,13 +49,17 @@ export const SearchBox = styled.input`
     font-weight: lighter;
   }
 
+  @media (max-width: 768px) {
+    width: 30%;
+  }
+
   @media (max-width: 640px) {
     display: none;
   }
 `;
 
 export const IconsWrapper = styled.div`
-  width: 150px;
+  width: 110px;
   height: 35px;
   display: flex;
   justify-content: space-between;
