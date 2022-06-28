@@ -12,18 +12,13 @@ import {
   LikeCmtMsgIcon,
   BookmarkIcon,
   LikeCount,
-  CommentList,
-  CommentInputBox,
-  Input,
-  ButtonSubmit,
 } from '../styles/Feed.styled';
-import Comment from '../components/Comment';
 import { BsThreeDots } from 'react-icons/bs';
 import { FiHeart, FiMessageCircle, FiBookmark } from 'react-icons/fi';
 import { BiPaperPlane } from 'react-icons/bi';
-import { VscSmiley } from 'react-icons/vsc';
+import CommentsForm from './CommentsForm';
 
-const Feed = ({ feed, feedId }) => {
+const Feed = ({ feed }) => {
   return (
     <Wrapper>
       <UserBox>
@@ -33,7 +28,7 @@ const Feed = ({ feed, feedId }) => {
       </UserBox>
       <PostBox>
         <PostImgBox>
-          <PostImg src={feed.feedImg} />
+          <PostImg src={feed.img_src} />
         </PostImgBox>
         <PostContentBox>
           <ReactionBox>
@@ -46,17 +41,10 @@ const Feed = ({ feed, feedId }) => {
               <FiBookmark size="27" />
             </BookmarkIcon>
           </ReactionBox>
-          <LikeCount>좋아요 {feed.like}개</LikeCount>
+          <LikeCount>좋아요 {feed.likes_count}개</LikeCount>
         </PostContentBox>
       </PostBox>
-      <CommentList>
-        <Comment />
-      </CommentList>
-      <CommentInputBox>
-        <VscSmiley size="27" />
-        <Input placeholder="댓글 달기..." />
-        <ButtonSubmit>게시</ButtonSubmit>
-      </CommentInputBox>
+      <CommentsForm data={feed.comments} />
     </Wrapper>
   );
 };

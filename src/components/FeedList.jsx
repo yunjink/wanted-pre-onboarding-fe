@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FeedUl } from '../styles/FeedList.styled';
 import Feed from './Feed';
 
-const FeedList = ({ feeds }) => {
+const FeedList = () => {
+  const [feeds, setFeeds] = useState([]);
+
+  useEffect(() => {
+    fetch('./data/data.json')
+      .then((res) => res.json())
+      .then((obj) => setFeeds(obj));
+  }, []);
+
   return (
     <FeedUl>
-      {Object.keys(feeds).map((feedId) => (
-        <Feed key={feedId} feed={feeds[feedId]} feedId={feedId} />
+      {feeds.map((feed) => (
+        <Feed key={feed.id} feed={feed} />
       ))}
     </FeedUl>
   );

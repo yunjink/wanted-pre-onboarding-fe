@@ -11,12 +11,6 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
  }
 
- body {
-    /* width: 100%;
-    background: #fafafa;
-    position: relative; */
- }
-  
   button {
     border: none;
     cursor: pointer;

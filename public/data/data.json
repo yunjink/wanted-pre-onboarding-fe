@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "username": "scarlettjohansson",
+    "profile": "../image/profile1.png",
+    "img_src": "https://source.unsplash.com/random/600x500",
+    "likes_count": "2,022",
+    "comments": [
+      { "username": "zendaya", "text": "Love this pic !" },
+      { "username": "drake", "text": "Heyyy" }
+    ]
+  },
+  {
+    "id": 2,
+    "username": "zendaya",
+    "profile": "../image/profile2.png",
+    "img_src": "https://source.unsplash.com/random/900x500",
+    "likes_count": "1,992",
+    "comments": [
+      { "username": "drake", "text": "Gorgeous" },
+      { "username": "scarlettjohansson", "text": "Looking good" }
+    ]
+  },
+  {
+    "id": 3,
+    "username": "drake",
+    "profile": "../image/profile3.png",
+    "img_src": "https://source.unsplash.com/random/700x1080",
+    "likes_count": "1,109",
+    "comments": [
+      { "username": "zendaya", "text": "Hello Hi Nice to meet you" },
+      { "username": "scarlettjohansson", "text": "What's up" }
+    ]
+  }
+]

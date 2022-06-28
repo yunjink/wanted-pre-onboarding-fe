@@ -64,7 +64,6 @@ export const IconsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  cursor: pointer;
 `;
 
 export const Icons = styled.div`
@@ -72,4 +71,5 @@ export const Icons = styled.div`
   margin: 0 10px;
   display: inline-block;
   font-size: 1.5rem;
+  cursor: pointer;
 `;
