@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Wrapper,
   UserBox,
@@ -19,7 +19,17 @@ import { BiPaperPlane } from 'react-icons/bi';
 import CommentsForm from './CommentsForm';
 
 const Feed = ({ feed }) => {
-  return (
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const image = new Image();
+    image.src = feed.img_src;
+    image.onload = () => {
+      setLoading(false);
+    };
+  }, []);
+
+  return loading ? null : (
     <Wrapper>
       <UserBox>
         <UserProfile src={feed.profile} />

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import FeedList from '../components/FeedList';
 import Navigation from '../components/Navigation';
 import { Wrapper } from '../styles/Main.styled';

@@ -1,31 +1,5 @@
 import styled from 'styled-components';
 
-// export const CommentList = styled.div`
-//   padding: 10px;
-//   margin-bottom: 5px;
-
-//   & > div {
-//     margin-bottom: 10px;
-//     :last-child {
-//       margin-bottom: 0px;
-//     }
-//   }
-// `;
-// export const Wrapper = styled.div`
-//   word-break: break-all;
-//   display: flex;
-// `;
-
-// export const UserNameBox = styled.span`
-//   font-weight: 600;
-//   margin-right: 10px;
-// `;
-
-// export const CommentBox = styled.span`
-//   display: inline;
-//   flex: 1;
-// `;
-
 export const CommentUl = styled.ul`
   padding: 5px 12px;
   margin-bottom: 5px;
