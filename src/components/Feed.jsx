@@ -19,20 +19,21 @@ import {
 } from '../styles/Feed.styled';
 import Comment from '../components/Comment';
 import { BsThreeDots } from 'react-icons/bs';
-import { FiHeart, FiMessageCircle, FiBookmark, FiSmile } from 'react-icons/fi';
+import { FiHeart, FiMessageCircle, FiBookmark } from 'react-icons/fi';
 import { BiPaperPlane } from 'react-icons/bi';
+import { VscSmiley } from 'react-icons/vsc';
 
-const Feed = () => {
+const Feed = ({ feed, feedId }) => {
   return (
     <Wrapper>
       <UserBox>
-        <UserProfile />
-        <UserName></UserName>
+        <UserProfile src={feed.profile} />
+        <UserName>{feed.username}</UserName>
         <BsThreeDots size="20" />
       </UserBox>
       <PostBox>
         <PostImgBox>
-          <PostImg />
+          <PostImg src={feed.feedImg} />
         </PostImgBox>
         <PostContentBox>
           <ReactionBox>
@@ -45,14 +46,14 @@ const Feed = () => {
               <FiBookmark size="27" />
             </BookmarkIcon>
           </ReactionBox>
-          <LikeCount>좋아요 100개</LikeCount>
+          <LikeCount>좋아요 {feed.like}개</LikeCount>
         </PostContentBox>
       </PostBox>
       <CommentList>
         <Comment />
       </CommentList>
       <CommentInputBox>
-        <FiSmile />
+        <VscSmiley size="27" />
         <Input placeholder="댓글 달기..." />
         <ButtonSubmit>게시</ButtonSubmit>
       </CommentInputBox>

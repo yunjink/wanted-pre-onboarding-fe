@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 40%;
+  width: 100%;
   max-width: 550px;
   min-width: 470px;
   display: flex;
@@ -39,7 +39,7 @@ export const UserName = styled.div`
   height: 100%;
   align-items: center;
   padding: 15px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 800;
   margin-top: -5px;
 `;

@@ -1,30 +1,30 @@
 {
   "feeds": {
     "1": {
-      "profile": "../images/profile1.png",
+      "profile": "../image/profile1.png",
       "feedImg": "https://source.unsplash.com/random/600x500",
       "username": "scarlettjohansson",
       "comments": [
         { "username": "zendaya", "content": "Heyyyy girl" },
         { "username": "drake", "content": "I love this pic" }
       ],
-      "like": 2
+      "like": "2,022"
     },
     "2": {
-      "profile": "../images/profile2.png",
+      "profile": "../image/profile2.png",
       "feedImg": "https://source.unsplash.com/random/900x500",
       "username": "zendaya",
       "comments": [
         { "username": "scarlettjohansson", "content": "Looking good !" }
       ],
-      "like": 0
+      "like": "1,992"
     },
     "3": {
-      "profile": "../images/profile3.png",
+      "profile": "../image/profile3.png",
       "feedImg": "https://source.unsplash.com/random/700x1080",
       "username": "drake",
       "comments": [{ "username": "zendaya", "content": "Hi Hello See ya" }],
-      "like": 4
+      "like": "1,109"
     }
   }
 }
